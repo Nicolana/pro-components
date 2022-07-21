@@ -38,6 +38,7 @@
   "resolutions": {
     "@types/react": "^18.0.0",
     "@types/react-dom": "^18.0.0",
+    "antd": "experimental",
     "prettier": "2.x",
     "rc-menu": "^9.3.1",
     "react": "^18.0.0",
@@ -48,6 +49,7 @@
     "prettier-plugin-packagejson": "^2.2.18"
   },
   "devDependencies": {
+    "@ant-design/cssinjs": "^0.0.0-alpha.38",
     "@ant-design/icons": "^4.6.2",
     "@babel/core": "^7.16.0",
     "@babel/plugin-proposal-object-rest-spread": "^7.8.3",
@@ -86,11 +88,9 @@
     "@umijs/test": "^3.2.10",
     "@umijs/test-utils": "^3.2.10",
     "@umijs/utils": "^3.2.11",
-    "antd": "^4.20.7",
-    "antdV5": "npm:antd@experimental",
+    "antd": "experimental",
     "babel-jest": "^27.3.1",
     "babel-loader": "^8.2.2",
-    "babel-plugin-import": "^1.12.2",
     "babel-types": "^6.26.0",
     "body-parser": "^1.18.2",
     "chalk": "^4.1.0",

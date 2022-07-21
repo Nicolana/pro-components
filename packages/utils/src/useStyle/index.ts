@@ -1,7 +1,7 @@
 import type { CSSInterpolation } from '@ant-design/cssinjs';
 import { useStyleRegister } from '@ant-design/cssinjs';
-import { theme as antdTheme } from 'antdV5';
-import type { AliasToken } from 'antdV5/es/theme';
+import { theme as antdTheme } from 'antd';
+import type { AliasToken } from 'antd/es/theme';
 import type React from 'react';
 
 const { useToken } = antdTheme;
