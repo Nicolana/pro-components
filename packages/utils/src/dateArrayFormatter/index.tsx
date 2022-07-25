@@ -1,12 +1,12 @@
-﻿import moment from 'moment';
+﻿import dayjs from 'dayjs';
 
-type FormatType = ((moment: any) => string) | string;
+type FormatType = ((dayjs: any) => string) | string;
 
 const formatString = (endText: any, format: FormatType) => {
   if (typeof format === 'function') {
-    return format(moment(endText));
+    return format(dayjs(endText));
   }
-  return moment(endText).format(format);
+  return dayjs(endText).format(format);
 };
 
 /**

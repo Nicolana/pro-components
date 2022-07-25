@@ -16,7 +16,7 @@ import srRSIntl from 'antd/es/locale/sr_RS';
 import viVNIntl from 'antd/es/locale/vi_VN';
 import zhCNIntl from 'antd/es/locale/zh_CN';
 import zhTWIntl from 'antd/es/locale/zh_TW';
-import moment from 'moment';
+import dayjs from 'dayjs';
 import { useRef, useState } from 'react';
 
 const intlMap = {
@@ -101,7 +101,7 @@ export default () => {
               bordered={false}
               value={intl}
               onChange={(value) => {
-                moment.locale(intlMap[value].locale);
+                dayjs.locale(intlMap[value].locale);
                 setIntl(value);
               }}
               options={Object.keys(intlMap).map((value) => ({ value, label: value }))}
