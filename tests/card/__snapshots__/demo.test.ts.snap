@@ -97,6 +97,8 @@ exports[`card demos 📸 renders ./packages/card/src/components/CheckCard/demos/
 </DocumentFragment>
 `;
 
+exports[`card demos 📸 renders ./packages/card/src/components/CheckCard/demos/basic.tsx correctly 2`] = `<DocumentFragment />`;
+
 exports[`card demos 📸 renders ./packages/card/src/components/CheckCard/demos/compose.tsx correctly 1`] = `
 <DocumentFragment>
   <h3>

@@ -11,15 +11,22 @@ export type UseStyleResult = {
   hashId: string;
 };
 
-export default function useStyle(
+export type ProAliasToken = AliasToken & {
+  proComponentsCls: string;
+};
+
+export function useStyle(
   componentName: string,
-  styleFn: (token: AliasToken) => CSSInterpolation,
+  styleFn: (token: ProAliasToken) => CSSInterpolation,
 ): UseStyleResult {
   const { token, hashId, theme } = useToken();
+  const proComponentsCls = '.ant-pro';
   return {
-    wrapSSR: useStyleRegister({ theme, token, hashId, path: [componentName] }, () =>
-      styleFn(token),
-    ),
+    wrapSSR: useStyleRegister({ theme, token, hashId, path: [componentName] }, () => {
+      return {
+        [proComponentsCls]: styleFn({ ...token, proComponentsCls: '.ant-pro' }),
+      };
+    }),
     hashId,
   };
 }

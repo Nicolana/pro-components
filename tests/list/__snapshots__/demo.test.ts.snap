@@ -2915,6 +2915,8 @@ exports[`list demos 📸 renders ./packages/list/src/demos/editable.tsx correctl
 </DocumentFragment>
 `;
 
+exports[`list demos 📸 renders ./packages/list/src/demos/editable.tsx correctly 2`] = `<DocumentFragment />`;
+
 exports[`list demos 📸 renders ./packages/list/src/demos/expand.tsx correctly 1`] = `
 <DocumentFragment>
   <div

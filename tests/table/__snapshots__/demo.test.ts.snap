@@ -740,6 +740,8 @@ exports[`table demos 📸 renders ./packages/table/src/components/DragSortTable/
 </DocumentFragment>
 `;
 
+exports[`table demos 📸 renders ./packages/table/src/components/DragSortTable/demos/drag.tsx correctly 2`] = `<DocumentFragment />`;
+
 exports[`table demos 📸 renders ./packages/table/src/components/DragSortTable/demos/drag-sort-table.tsx correctly 1`] = `
 <DocumentFragment>
   <div

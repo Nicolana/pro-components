@@ -1646,6 +1646,8 @@ exports[`form demos 📸 renders ./packages/form/src/components/Dependency/demos
 </DocumentFragment>
 `;
 
+exports[`form demos 📸 renders ./packages/form/src/components/Dependency/demos/dependency2.tsx correctly 2`] = `<DocumentFragment />`;
+
 exports[`form demos 📸 renders ./packages/form/src/components/FieldSet/demos/captCha.tsx correctly 1`] = `
 <DocumentFragment>
   <form

@@ -1,7 +1,6 @@
-﻿import type { Moment } from 'moment';
-import moment from 'moment';
+﻿import moment from 'moment';
 
-type FormatType = ((moment: Moment) => string) | string;
+type FormatType = ((moment: any) => string) | string;
 
 const formatString = (endText: any, format: FormatType) => {
   if (typeof format === 'function') {

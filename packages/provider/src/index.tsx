@@ -293,19 +293,21 @@ const ConfigProviderWrap: React.FC<Record<string, unknown>> = ({
             : {};
 
         return (
-          <Provider {...configProvider}>
-            <ConfigProvider
-              value={{
-                ...value,
-                intl: intl || zhCNIntl,
-              }}
-            >
-              <>
-                {autoClearCache && <CacheClean />}
-                {children}
-              </>
-            </ConfigProvider>
-          </Provider>
+          <div className="ant-pro">
+            <Provider {...configProvider}>
+              <ConfigProvider
+                value={{
+                  ...value,
+                  intl: intl || zhCNIntl,
+                }}
+              >
+                <>
+                  {autoClearCache && <CacheClean />}
+                  {children}
+                </>
+              </ConfigProvider>
+            </Provider>
+          </div>
         );
       }}
     </ConfigConsumer>
