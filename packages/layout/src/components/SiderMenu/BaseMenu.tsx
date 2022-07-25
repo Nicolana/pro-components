@@ -225,6 +225,7 @@ class MenuUtil {
               key: (item.key! || item.path!) + '-group',
               style: {
                 padding: 0,
+                borderBottom: 0,
                 margin: this.props.collapsed ? '4px' : '12px 16px',
                 borderColor: designToken?.sider?.menuItemDividerColor,
               },
@@ -379,7 +380,6 @@ const BaseMenu: React.FC<BaseMenuProps & PrivateSiderMenuProps> = (props) => {
     menu,
     matchMenuKeys,
     iconfontUrl,
-    collapsed,
     selectedKeys: propsSelectedKeys,
     onSelect,
     menuRenderType,
